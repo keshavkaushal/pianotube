@@ -1,5 +1,5 @@
 body {
-	background: black;
+	background: #111;
 	color: white;
 }
 
@@ -10,5 +10,5 @@ img {
 
 .help {
 	font-weight: bold;
-	color: green;
+	color: #00BCD4;
 }
