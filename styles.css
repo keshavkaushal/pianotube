@@ -1,6 +1,9 @@
 body {
-	background: #222;
+	background: #322f33;
 	color: white;
+	font-family: 'Silkscreen', cursive;
+	font-size: 120%;
+
 }
 
 img {
@@ -9,6 +12,11 @@ img {
 }
 
 .help {
-	font-weight: bold;
-	color: #eee;
+	color: #a0f4d4;
+}
+
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
 }
