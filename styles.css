@@ -1,9 +1,10 @@
 body {
 	background: #322f33;
 	color: white;
-	font-family: 'Silkscreen', cursive;
-	font-size: 120%;
+}
 
+.ss {
+	font-family: 'Silkscreen', cursive;
 }
 
 img {
@@ -19,4 +20,38 @@ img {
   border: 3px solid black;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.btn {
+	border-radius: 2px;
+}
+
+.accordion-item {
+	background-color: transparent;
+}
+
+.accordion-button {
+	color: #ffffff;
+    background-color: #8989da;
+    /*border-radius: 2px;*/
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+.footer {
+	width: 100%;
+	padding: 6vh 0px;
+	color: #fff7;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
