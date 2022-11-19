@@ -1,10 +1,18 @@
 body {
 	background: #322f33;
 	color: white;
+	background-color: #322f33;
+	opacity: 1;
+	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #322f33 36px ), repeating-linear-gradient( #26242755, #262427 );
+	min-height: 100vh;
 }
 
 .ss {
 	font-family: 'Silkscreen', cursive;
+}
+
+h1 {
+	font-size: 120px;
 }
 
 img {
@@ -14,16 +22,22 @@ img {
 
 .help {
 	color: #a0f4d4;
+	font-weight: bold;
 }
 
 #scroll-container {
-  border: 3px solid black;
-  border-radius: 5px;
-  overflow: hidden;
+	border: 3px solid black;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 .btn {
 	border-radius: 2px;
+}
+
+.btn-light {
+	background-color: #9090e6;
+	border-color: #4f46c8;
 }
 
 .accordion-item {
@@ -32,8 +46,8 @@ img {
 
 .accordion-button {
 	color: #ffffff;
-    background-color: #8989da;
-    /*border-radius: 2px;*/
+	background-color: #8989da;
+	/*border-radius: 2px;*/
 }
 
 .accordion-button:focus {
@@ -43,15 +57,15 @@ img {
 .footer {
 	width: 100%;
 	padding: 6vh 0px;
-	color: #fff7;
+	color: #fff8;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
 }
