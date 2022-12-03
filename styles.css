@@ -1,18 +1,23 @@
-body {
-	background: #322f33;
+html {
+	background: #222022;
 	color: white;
-	background-color: #322f33;
-	opacity: 1;
-	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #322f33 36px ), repeating-linear-gradient( #26242755, #262427 );
-	min-height: 100vh;
+}
+
+body {
+	background-color: inherit;
+	color: inherit;
+}
+
+.inter {
+	font-family: 'Inter', sans-serif;
 }
 
 .ss {
 	font-family: 'Silkscreen', cursive;
 }
 
-h1 {
-	font-size: 120px;
+.grey {
+	color: #ccc;
 }
 
 img {
@@ -20,24 +25,14 @@ img {
 	max-width: 100%;
 }
 
-.help {
-	color: #a0f4d4;
-	font-weight: bold;
-}
-
-#scroll-container {
-	border: 3px solid black;
-	border-radius: 5px;
-	overflow: hidden;
-}
-
 .btn {
-	border-radius: 2px;
+	border-radius: 5px;
+	margin: 0px 4px;
 }
 
 .btn-light {
-	background-color: #9090e6;
-	border-color: #4f46c8;
+	border: none;
+	background-color: #9092e7;
 }
 
 .accordion-item {
@@ -58,6 +53,23 @@ img {
 	width: 100%;
 	padding: 6vh 0px;
 	color: #fff8;
+}
+
+.channel {
+	text-align: left;
+	width: 100%;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 5px;
+	margin-bottom: 12px;
+	padding: 10px;
+}
+
+.circle {
+	border-radius: 50%;
+	margin-right: 10px;
 }
 
 body::-webkit-scrollbar {
