@@ -19,12 +19,12 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body>
+<body onload="date_name()">
 	<div class="container">
 		<div class="child text-center">
 			<p class="my-5 grey">YTP - YouTube for Pianists - Created by Kesh</p>
 			<h1 class="my-5 display-2 inter">Add video controls to YouTube</h1>
-			<h3 class="grey my-5">Learn piano tutorials more easily with helpful control buttons</h3>
+			<h3 class="grey my-5">Learn Synthesia tutorials easily with helpful video buttons</h3>
 
 			<div class="imageholder my-4">
 				<img src="img2.png">
@@ -35,9 +35,9 @@
 				<a class="btn btn-lg btn-light" href="https://bit.ly/3O6FQ4X" target="_blank" role="button">Buy it now</a>
 			</div>
 
-			<p class="SALE">&#128680; CHRISTMAS SALE: Use discount code 'YTP123' for 50% off! &#128680;</p>
+			<p class="SALE">&#128680; <span id="CURRENT_MONTH"></span> sale: Use discount code 'YTP123' for 50% off! &#128680;</p>
 
-			<h3 class="grey my-5">Learn from your favourite piano creators - including:</h3>
+			<h3 class="grey my-5">Learn from your favourite piano creators. Including:</h3>
 
 			<div class="row">
 				<div class="col-md-6">
@@ -78,7 +78,13 @@
 				</div>
 			</div>
 
-			<h3 class="grey my-5">...and many more - check it out!</h3>
+			<h3 class="grey my-5">YTP works with any YouTube video. Just paste the link to start:</h3>
+
+			<div class="imageholder my-4">
+				<img src="img.png">
+			</div>
+
+			<h3 class="grey my-5">It's free to try! Check it out:</h3>
 
 			<div class="text-center inter mb-5">
 				<a class="btn btn-lg btn-light" href="https://bit.ly/3F2HDnN" target="_blank" role="button">Free demo</a>
@@ -87,6 +93,15 @@
 
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		function date_name()
+		{
+			const date = new Date();
+			const month = date.toLocaleString('default', { month: 'long' });
+			document.getElementById('CURRENT_MONTH').innerHTML = month;
+		}
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
